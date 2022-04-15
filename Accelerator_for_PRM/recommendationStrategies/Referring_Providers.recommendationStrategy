@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Contact</contextRecordType>
+    <isTemplate>true</isTemplate>
+    <label>Referring Providers</label>
+    <recommendationLoad>
+        <label>Enroll in Provider Portal</label>
+        <name>Enroll_in_Provider_Portal</name>
+        <condition>
+            <field>Id</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>0pr5f000000IGrSAAW</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Enroll_in_Provider_Portal</childNode>
+        <label>Output</label>
+        <name>Output_cfe0a10dee9d4c81a73a1954df26691f</name>
+    </union>
+</RecommendationStrategy>

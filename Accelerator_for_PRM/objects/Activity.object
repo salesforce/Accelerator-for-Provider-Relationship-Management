@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Check_In_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Check In Date/Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Check_Out_Accuracy_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Out Accuracy (m)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Check_Out_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Out Date/Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Check_Out_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Out Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Check_Out_Distance_From_Record_mi__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Out Distance From Record (mi)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Check_Out_Latitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Out Latitude</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Check_Out_Longitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Out Longitude</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_Latitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Created Latitude</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_Location_Accuracy_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Created Location Accuracy (m)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_Location_Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Created Location Verified</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Created_Longitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Created Longitude</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Distance_From_Record__c</fullName>
+        <externalId>false</externalId>
+        <label>Distance From Record (mi)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Quality__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting Quality</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_on_Site_Minutes__c</fullName>
+        <externalId>false</externalId>
+        <label>Time on Site Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

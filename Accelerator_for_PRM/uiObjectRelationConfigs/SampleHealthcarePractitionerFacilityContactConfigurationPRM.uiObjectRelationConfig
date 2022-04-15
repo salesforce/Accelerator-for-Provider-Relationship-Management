@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIObjectRelationConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <UIObjectRelationFieldConfigs>
+        <displayLabel>Address:</displayLabel>
+        <queryText>{&quot;fieldNode&quot;:{&quot;fieldEnumOrId&quot;:&quot;ShippingAddress&quot;},&quot;startNode&quot;:{&quot;initialObject&quot;:&quot;RelatedObject&quot;},&quot;traversalNodes&quot;:[]}</queryText>
+        <rowOrder>1</rowOrder>
+    </UIObjectRelationFieldConfigs>
+    <UIObjectRelationFieldConfigs>
+        <displayLabel>Phone:</displayLabel>
+        <queryText>{&quot;fieldNode&quot;:{&quot;fieldEnumOrId&quot;:&quot;Phone&quot;},&quot;startNode&quot;:{&quot;initialObject&quot;:&quot;RelatedObject&quot;},&quot;traversalNodes&quot;:[]}</queryText>
+        <rowOrder>2</rowOrder>
+    </UIObjectRelationFieldConfigs>
+    <UIObjectRelationFieldConfigs>
+        <displayLabel>Fax:</displayLabel>
+        <queryText>{&quot;fieldNode&quot;:{&quot;fieldEnumOrId&quot;:&quot;Fax&quot;},&quot;startNode&quot;:{&quot;initialObject&quot;:&quot;RelatedObject&quot;},&quot;traversalNodes&quot;:[]}</queryText>
+        <rowOrder>3</rowOrder>
+    </UIObjectRelationFieldConfigs>
+    <UIObjectRelationFieldConfigs>
+        <displayLabel>Parent Organization:</displayLabel>
+        <queryText>{&quot;fieldNode&quot;:{&quot;fieldEnumOrId&quot;:&quot;Name&quot;},&quot;startNode&quot;:{&quot;initialObject&quot;:&quot;RelatedObject&quot;},&quot;traversalNodes&quot;:[{&quot;destinationObjectEnumOrId&quot;:&quot;Account&quot;,&quot;fieldEnumOrId&quot;:&quot;ParentId&quot;,&quot;traversalDirection&quot;:&quot;parent&quot;}]}</queryText>
+        <rowOrder>4</rowOrder>
+    </UIObjectRelationFieldConfigs>
+    <UIObjectRelationFieldConfigs>
+        <displayLabel>Type:</displayLabel>
+        <queryText>{&quot;fieldNode&quot;:{&quot;fieldEnumOrId&quot;:&quot;ProviderType&quot;},&quot;startNode&quot;:{&quot;initialObject&quot;:&quot;RelatedObject&quot;},&quot;traversalNodes&quot;:[{&quot;destinationObjectEnumOrId&quot;:&quot;HealthcareProvider&quot;,&quot;fieldEnumOrId&quot;:&quot;AccountId&quot;,&quot;traversalDirection&quot;:&quot;child&quot;}]}</queryText>
+        <rowOrder>5</rowOrder>
+    </UIObjectRelationFieldConfigs>
+    <UIObjectRelationFieldConfigs>
+        <displayLabel>Specialties:</displayLabel>
+        <queryText>{&quot;fieldNode&quot;:{&quot;fieldEnumOrId&quot;:&quot;Name&quot;},&quot;startNode&quot;:{&quot;initialObject&quot;:&quot;IndirectRelationshipObject&quot;},&quot;traversalNodes&quot;:[{&quot;destinationObjectEnumOrId&quot;:&quot;CareProviderFacilitySpecialty&quot;,&quot;fieldEnumOrId&quot;:&quot;PractitionerFacilityId&quot;,&quot;traversalDirection&quot;:&quot;child&quot;},{&quot;destinationObjectEnumOrId&quot;:&quot;CareSpecialty&quot;,&quot;fieldEnumOrId&quot;:&quot;SpecialtyId&quot;,&quot;traversalDirection&quot;:&quot;parent&quot;}]}</queryText>
+        <rowOrder>6</rowOrder>
+    </UIObjectRelationFieldConfigs>
+    <UIObjectRelationFieldConfigs>
+        <displayLabel>NPI:</displayLabel>
+        <queryText>{&quot;fieldNode&quot;:{&quot;fieldEnumOrId&quot;:&quot;Npi&quot;},&quot;startNode&quot;:{&quot;initialObject&quot;:&quot;RelatedObject&quot;},&quot;traversalNodes&quot;:[{&quot;destinationObjectEnumOrId&quot;:&quot;HealthcareProviderNpi&quot;,&quot;fieldEnumOrId&quot;:&quot;AccountId&quot;,&quot;traversalDirection&quot;:&quot;child&quot;}]}</queryText>
+        <rowOrder>7</rowOrder>
+    </UIObjectRelationFieldConfigs>
+    <contextObject>Contact</contextObject>
+    <indirectObjectContextField>PractitionerId</indirectObjectContextField>
+    <indirectObjectRelatedField>AccountId</indirectObjectRelatedField>
+    <indirectRelationshipObject>HealthcarePractitionerFacility</indirectRelationshipObject>
+    <isActive>true</isActive>
+    <masterLabel>Sample Healthcare Practitioner Facility Configuration</masterLabel>
+    <relatedObject>Account</relatedObject>
+    <relationshipType>Indirect</relationshipType>
+</UIObjectRelationConfig>
