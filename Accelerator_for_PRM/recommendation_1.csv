@@ -1,0 +1,2 @@
+"ACCEPTANCELABEL","ACTIONREFERENCE","DESCRIPTION","EXTERNALID","ID","ISACTIONACTIVE","ISDELETED","NAME","REJECTIONLABEL"
+"Accept","Reminder_to_Enroll_in_Provider_Portal","This provider is not yet enrolled in your organization's referring provider portal. Would you like to sign them up next time you engage with them?","","0pr5f000000IGrSAAW","true","false","Enroll in provider portal","Not Interested"
