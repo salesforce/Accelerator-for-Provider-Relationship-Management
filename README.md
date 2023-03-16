@@ -57,7 +57,9 @@ Last Updated: March 16, 2023
 3. At the bottom of the Activity Settings, click “Suggest” to auto-assign the custom fields.
 4. In the Field Set dropdown in Activity Settings, Select the Field Set “Salesforce Maps Check Out”.
 
-[Image: Screenshot 2023-03-15 at 10.59.48 AM.png]**Configure Recommendation Record -** This Recommendation will show as a Next Best Action to your liaisons as they review contact records in Salesforce. If the custom field “Enrolled in Provider Portal?” on the Contact Record is Unchecked, then this recommendation will show.
+![](/images/prm1.png)
+
+**Configure Recommendation Record -** This Recommendation will show as a Next Best Action to your liaisons as they review contact records in Salesforce. If the custom field “Enrolled in Provider Portal?” on the Contact Record is Unchecked, then this recommendation will show.
 
 
 1. Download the recommendation_1.csv file in the GitHub repository above
@@ -76,7 +78,7 @@ Last Updated: March 16, 2023
     5. Formula: {!$Record.ActivityDate} > TODAY()
     6. When to Run the Flow for Updated Records: Only when a record is updated to meet the condition requirements. 
 
-[Image: Screenshot 2023-03-15 at 11.48.54 AM.png]
+![](/images/prm2.png)
 
 1. On the Flow path, Click to add a Schedule Trigger:
     1. Set the Schedule Path to be “1 Day Before Event: Date”
@@ -84,7 +86,7 @@ Last Updated: March 16, 2023
     3. Offset Number: 1
     4. Offset Options: Day Before
 
-[Image: Screenshot 2023-03-16 at 10.10.29 AM.png]
+![](/images/prm3.png)
 
 1. Add a Flow Action of the following type: Email Alert
     1. Type = Email Alert
