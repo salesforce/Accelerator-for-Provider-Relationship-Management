@@ -1,15 +1,7 @@
-# README.md
-
-
-Updated Install Instructions
-3/16/2023
-
-
-
 # Accelerator for PRM - Unmanaged Package Installation Instructions
 
 
-Last Updated: March 2023
+Last Updated: March 16, 2023
 
 
 ## Pre-Installation Steps:
