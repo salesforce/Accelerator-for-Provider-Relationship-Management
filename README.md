@@ -123,479 +123,84 @@ Last Updated: March 16, 2023
 
 
 
-|
-Resources:	|
-	|
-	|
-	|
-	|
-|---	|---	|---	|---	|---	|
-|
-**Action**	|
-**Component Name**	|
-**Parent Object**	|
-**Component Type**	|
-**Installation Notes**	|
-|
-Create	|
-NewEventPRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Account Layout - PRM	|
-Account	|
-Page Layout	|
-This is a brand new component.	|
-|
-Create	|
-NewCasePRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-SendEmailPRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-My Accounts Without Recent Activity	|
-	|
-Report	|
-This is a brand new component.	|
-|
-Create	|
-Task.Defer_Change_Date	|
-Task	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Screen_Shot_20220215_at_45040_PM1	|
-	|
-Asset File	|
-This is a brand new component.	|
-|
-Create	|
-Account Request	|
-Case	|
-Page Layout	|
-This is a brand new component.	|
-|
-Create	|
-NewNotePRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Physician Liaison Performance Dashboard	|
-	|
-Dashboard	|
-This is a brand new component.	|
-|
-Create	|
-Account_Request_Path	|
-	|
-Path Assistant	|
-This is a brand new component.	|
-|
-Create	|
-Provider	|
-Lead	|
-Business Process	|
-This is a brand new component.	|
-|
-Create	|
-My Check Ins	|
-	|
-Report	|
-This is a brand new component.	|
-|
-Create	|
-Simple Task	|
-Task	|
-Page Layout	|
-This is a brand new component.	|
-|
-Create	|
-SampleHealthcarePractitionerFacilityContactConfigurationPRM	|
-	|
-UI Object Relation Configuration	|
-This is a brand new component.	|
-|
-Create	|
-Provider	|
-Lead	|
-Record Type	|
-This is a brand new component.	|
-|
-Create	|
-Provider	|
-Lead	|
-Page Layout	|
-This is a brand new component.	|
-|
-Create	|
-Confirm Meeting	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Account Request	|
-Case	|
-Business Process	|
-This is a brand new component.	|
-|
-Create	|
-My Completed Activities	|
-	|
-Report	|
-This is a brand new component.	|
-|
-Create	|
-Liaison Reports	|
-	|
-Report Folder	|
-This is a brand new component.	|
-|
-Create	|
-Physician Liaison Layout	|
-Account	|
-Compact Layout	|
-This is a brand new component.	|
-|
-Create	|
-Case.SendEmailCase	|
-Case	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Enroll in Provider Portal	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Physician Liaison Layout	|
-Contact	|
-Compact Layout	|
-This is a brand new component.	|
-|
-Create	|
-LogACallPRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Simple Task	|
-Task	|
-Record Type	|
-This is a brand new component.	|
-|
-Create	|
-My Avg Check-In Distance from Account (f	|
-	|
-Report	|
-This is a brand new component.	|
-|
-Create	|
-NewTaskPRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Physician Layout PRM	|
-Contact	|
-Page Layout	|
-This is a brand new component.	|
-|
-Create	|
-Salesforce Maps Check Out	|
-Task	|
-Field Set	|
-This is a brand new component.	|
-|
-Create	|
-Referral Trend Report	|
-	|
-Report	|
-This is a brand new component.	|
-|
-Create	|
-NewOpportunityPRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Task.UpdatePriority_PRM	|
-Task	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-General	|
-Task	|
-Record Type	|
-This is a brand new component.	|
-|
-Create	|
-My New Leads	|
-Lead	|
-List View	|
-This is a brand new component.	|
-|
-Create	|
-NewContactPRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Account Request	|
-Case	|
-Record Type	|
-This is a brand new component.	|
-|
-Create	|
-My Meeting Quality	|
-	|
-Report	|
-This is a brand new component.	|
-|
-Create	|
-My Time Spent On Site	|
-	|
-Report	|
-This is a brand new component.	|
-|
-Create	|
-SampleHealthcarePractitionerFacilityAccountConfigurationPRM	|
-	|
-UI Object Relation Configuration	|
-This is a brand new component.	|
-|
-Create	|
-Physician Liaison Layout	|
-Lead	|
-Compact Layout	|
-This is a brand new component.	|
-|
-Create	|
-Liaison Dashboards	|
-	|
-Dashboard Folder	|
-This is a brand new component.	|
-|
-Create	|
-New_Task_PRM	|
-Global	|
-Action	|
-This is a brand new component.	|
-|
-Create	|
-Task.UpdateStatusPRM	|
-Task	|
-Action	|
-This is a brand new component.	|
-|
-	|
-	|
-	|
-	|
-	|
-|
-Apps:	|
-	|
-	|
-	|
-	|
-|
-**Action**	|
-**Component Name**	|
-**Parent Object**	|
-**Component Type**	|
-**Installation Notes**	|
-|
-Create	|
-Physician Relationship Management	|
-	|
-App	|
-This is a brand new component.	|
-|
-	|
-	|
-	|
-	|
-	|
-|
-Flows:	|
-	|
-	|
-	|
-	|
-|
-**Action**	|
-**Component Name**	|
-**Parent Object**	|
-**Component Type**	|
-**Installation Notes**	|
-|
-Create	|
-Reminder to Enroll in Provider Portal	|
-	|
-Flow Version	|
-This is a brand new component.	|
-|
-	|
-	|
-	|
-	|
-	|
-|
-Fields:	|
-	|
-	|
-	|
-	|
-|
-**Action**	|
-**Component Name**	|
-**Parent Object**	|
-**Component Type**	|
-**Installation Notes**	|
-|
-Create	|
-Check Out Distance From Record (mi)	|
-Activity	|
-Custom Field	|
-This is a brand new component.	|
-|
-Create	|
-Check Out Date/Time	|
-Activity	|
-Custom Field	|
-This is a brand new component.	|
-|
-Create	|
-Meeting Quality	|
-Activity	|
-Custom Field	|
-This is a brand new component.	|
-|
-Create	|
-Check In Date/Time	|
-Activity	|
-Custom Field	|
-This is a brand new component.	|
-|
-Create	|
-Enrolled in Provider Portal?	|
-Contact	|
-Custom Field	|
-This is a brand new component.	|
-|
-Create	|
-Time on Site Minutes	|
-Activity	|
-Custom Field	|
-This is a brand new component.	|
-|
-Create	|
-Days Since Last Visit	|
-Account	|
-Custom Field	|
-This is a brand new component.	|
-|
-Create	|
-Check Out Date	|
-Activity	|
-Custom Field	|
-This is a brand new component.	|
-|
-	|
-	|
-	|
-	|
-	|
-|
-Recommendation Strategies:	|
-	|
-	|
-	|
-	|
-|
-**Action**	|
-**Component Name**	|
-**Parent Object**	|
-**Component Type**	|
-**Installation Notes**	|
-|
-Create	|
-Referring Providers	|
-	|
-Recommendation Strategy	|
-This is a brand new component.	|
-|
-	|
-	|
-	|
-	|
-	|
-|
-Pages:	|
-	|
-	|
-	|
-	|
-|
-**Action**	|
-**Component Name**	|
-**Parent Object**	|
-**Component Type**	|
-**Installation Notes**	|
-|
-Create	|
-Physician_Relationship_Management_UtilityBar	|
-	|
-Lightning Page	|
-This is a brand new component.	|
-|
-Create	|
-Lead_Record_Page_PRM	|
-	|
-Lightning Page	|
-This is a brand new component.	|
-|
-Create	|
-Physician_Liaison_Home_Page	|
-	|
-Lightning Page	|
-This is a brand new component.	|
-|
-Create	|
-Case_Record_Page1	|
-	|
-Lightning Page	|
-This is a brand new component.	|
-|
-Create	|
-Contact_Record_Page_PRM	|
-	|
-Lightning Page	|
-This is a brand new component.	|
-|
-Create	|
-Account_Record_Page_PRM	|
-	|
-Lightning Page	|
-This is a brand new component.	|
+| <br>Resources:                 |                                                                 |                       |                                      |                                    |
+| ------------------------------ | --------------------------------------------------------------- | --------------------- | ------------------------------------ | ---------------------------------- |
+| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
+| <br>Create                     | <br>NewEventPRM                                                 | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Account Layout - PRM                                        | <br>Account           | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>NewCasePRM                                                  | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>SendEmailPRM                                                | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>My Accounts Without Recent Activity                         |                       | <br>Report                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Task.Defer_Change_Date                                      | <br>Task              | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Screen_Shot_20220215_at_45040_PM1                           |                       | <br>Asset File                       | <br>This is a brand new component. |
+| <br>Create                     | <br>Account Request                                             | <br>Case              | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>NewNotePRM                                                  | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Physician Liaison Performance Dashboard                     |                       | <br>Dashboard                        | <br>This is a brand new component. |
+| <br>Create                     | <br>Account_Request_Path                                        |                       | <br>Path Assistant                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Provider                                                    | <br>Lead              | <br>Business Process                 | <br>This is a brand new component. |
+| <br>Create                     | <br>My Check Ins                                                |                       | <br>Report                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Simple Task                                                 | <br>Task              | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>SampleHealthcarePractitionerFacilityContactConfigurationPRM |                       | <br>UI Object Relation Configuration | <br>This is a brand new component. |
+| <br>Create                     | <br>Provider                                                    | <br>Lead              | <br>Record Type                      | <br>This is a brand new component. |
+| <br>Create                     | <br>Provider                                                    | <br>Lead              | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>Confirm Meeting                                             | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Account Request                                             | <br>Case              | <br>Business Process                 | <br>This is a brand new component. |
+| <br>Create                     | <br>My Completed Activities                                     |                       | <br>Report                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Liaison Reports                                             |                       | <br>Report Folder                    | <br>This is a brand new component. |
+| <br>Create                     | <br>Physician Liaison Layout                                    | <br>Account           | <br>Compact Layout                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Case.SendEmailCase                                          | <br>Case              | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Enroll in Provider Portal                                   | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Physician Liaison Layout                                    | <br>Contact           | <br>Compact Layout                   | <br>This is a brand new component. |
+| <br>Create                     | <br>LogACallPRM                                                 | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Simple Task                                                 | <br>Task              | <br>Record Type                      | <br>This is a brand new component. |
+| <br>Create                     | <br>My Avg Check-In Distance from Account (f                    |                       | <br>Report                           | <br>This is a brand new component. |
+| <br>Create                     | <br>NewTaskPRM                                                  | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Physician Layout PRM                                        | <br>Contact           | <br>Page Layout                      | <br>This is a brand new component. |
+| <br>Create                     | <br>Salesforce Maps Check Out                                   | <br>Task              | <br>Field Set                        | <br>This is a brand new component. |
+| <br>Create                     | <br>Referral Trend Report                                       |                       | <br>Report                           | <br>This is a brand new component. |
+| <br>Create                     | <br>NewOpportunityPRM                                           | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Task.UpdatePriority_PRM                                     | <br>Task              | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>General                                                     | <br>Task              | <br>Record Type                      | <br>This is a brand new component. |
+| <br>Create                     | <br>My New Leads                                                | <br>Lead              | <br>List View                        | <br>This is a brand new component. |
+| <br>Create                     | <br>NewContactPRM                                               | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Account Request                                             | <br>Case              | <br>Record Type                      | <br>This is a brand new component. |
+| <br>Create                     | <br>My Meeting Quality                                          |                       | <br>Report                           | <br>This is a brand new component. |
+| <br>Create                     | <br>My Time Spent On Site                                       |                       | <br>Report                           | <br>This is a brand new component. |
+| <br>Create                     | <br>SampleHealthcarePractitionerFacilityAccountConfigurationPRM |                       | <br>UI Object Relation Configuration | <br>This is a brand new component. |
+| <br>Create                     | <br>Physician Liaison Layout                                    | <br>Lead              | <br>Compact Layout                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Liaison Dashboards                                          |                       | <br>Dashboard Folder                 | <br>This is a brand new component. |
+| <br>Create                     | <br>New_Task_PRM                                                | <br>Global            | <br>Action                           | <br>This is a brand new component. |
+| <br>Create                     | <br>Task.UpdateStatusPRM                                        | <br>Task              | <br>Action                           | <br>This is a brand new component. |
+|                                |                                                                 |                       |                                      |                                    |
+| <br>Apps:                      |                                                                 |                       |                                      |                                    |
+| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
+| <br>Create                     | <br>Physician Relationship Management                           |                       | <br>App                              | <br>This is a brand new component. |
+|                                |                                                                 |                       |                                      |                                    |
+| <br>Flows:                     |                                                                 |                       |                                      |                                    |
+| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
+| <br>Create                     | <br>Reminder to Enroll in Provider Portal                       |                       | <br>Flow Version                     | <br>This is a brand new component. |
+|                                |                                                                 |                       |                                      |                                    |
+| <br>Fields:                    |                                                                 |                       |                                      |                                    |
+| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
+| <br>Create                     | <br>Check Out Distance From Record (mi)                         | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
+| <br>Create                     | <br>Check Out Date/Time                                         | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
+| <br>Create                     | <br>Meeting Quality                                             | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
+| <br>Create                     | <br>Check In Date/Time                                          | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
+| <br>Create                     | <br>Enrolled in Provider Portal?                                | <br>Contact           | <br>Custom Field                     | <br>This is a brand new component. |
+| <br>Create                     | <br>Time on Site Minutes                                        | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
+| <br>Create                     | <br>Days Since Last Visit                                       | <br>Account           | <br>Custom Field                     | <br>This is a brand new component. |
+| <br>Create                     | <br>Check Out Date                                              | <br>Activity          | <br>Custom Field                     | <br>This is a brand new component. |
+|                                |                                                                 |                       |                                      |                                    |
+| <br>Recommendation Strategies: |                                                                 |                       |                                      |                                    |
+| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
+| <br>Create                     | <br>Referring Providers                                         |                       | <br>Recommendation Strategy          | <br>This is a brand new component. |
+|                                |                                                                 |                       |                                      |                                    |
+| <br>Pages:                     |                                                                 |                       |                                      |                                    |
+| <br>**Action**                 | <br>**Component Name**                                          | <br>**Parent Object** | <br>**Component Type**               | <br>**Installation Notes**         |
+| <br>Create                     | <br>Physician_Relationship_Management_UtilityBar                |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Lead_Record_Page_PRM                                        |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Physician_Liaison_Home_Page                                 |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Case_Record_Page1                                           |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Contact_Record_Page_PRM                                     |                       | <br>Lightning Page                   | <br>This is a brand new component. |
+| <br>Create                     | <br>Account_Record_Page_PRM                                     |                       | <br>Lightning Page                   | <br>This is a brand new component. |
 
