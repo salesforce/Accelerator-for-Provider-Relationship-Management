@@ -114,61 +114,7 @@ Last Updated: March 16, 2023
 
 
 
-|
-**Component Type**	|
-**Component Name**	|
-|---	|---	|
-|
-Lightning App	|
-Physician Relationship Management	|
-|
-Default Home Page - PRM App	|
-Physician_Liaison_Home_Page	|
-|
-Case Record Type	|
-Account Request	|
-|
-Case Page Layout	|
-Account Request	|
-|
-Case Path	|
-Account Request Path	|
-|
-Case Lightning Page	|
-Case_Record_Page1	|
-|
-Task Record Type	|
-Simple Task	|
-|
-Contact Page Layout	|
-Physician Layout	|
-|
-Contact Lightning Page	|
-Contact Record Page PRM	|
-|
-Contact Compact Layout	|
-Physician Liaison Layout	|
-|
-Lead Record Type	|
-Provider	|
-|
-Lead Page Layout	|
-Provider	|
-|
-Lead Lightning Page	|
-Lead_Record_Page_PRM	|
-|
-Lead Compact Layout	|
-Physician Liaison Layout	|
-|
-Account Page Layout	|
-Account Layout - PRM	|
-|
-Account Lightning Page	|
-Account Record Page PRM	|
-|
-Account Compact Layout	|
-Physician Liaison Layout	|
+![](/images/prm4.png)
 
 
 
