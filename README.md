@@ -1,1 +1,661 @@
-<h2 class="c39" id="h.t96unt60g0bn"><span class="c10 c7">Pre-Installation Steps:</span></h2><p class="c52 c48 subtitle" id="h.q770sap3jfyd"><span class="c7 c37">These steps must be completed before installing the unmanaged package (Estimated time: 10 minutes)</span></p><ol class="c18 lst-kix_1dzs4yy7oxe5-0 start" start="1"><li class="c42 c2 li-bullet-0"><span class="c13 c11">Ensure the following licenses are installed in your Salesforce org:</span></li></ol><ol class="c18 lst-kix_1dzs4yy7oxe5-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c4">Health Cloud Sales - Enterprise Edition</span></li><li class="c17 c2 li-bullet-0"><span class="c4">Salesforce Maps</span></li><li class="c17 c2 li-bullet-0"><span class="c4">Shield</span></li><li class="c17 c2 li-bullet-0"><span class="c7">To confirm which licenses are installed in your org, please refer to this Help Article: </span><span class="c44 c7"><a class="c30" href="https://www.google.com/url?q=https://help.salesforce.com/s/articleView?id%3Dsf.distribution_assigning_user_licenses.htm%26type%3D5&amp;sa=D&amp;source=editors&amp;ust=1651601162342898&amp;usg=AOvVaw0xvlzR2ByROI9xy6HEDSLs">https://help.salesforce.com/s/articleView?id=sf.distribution_assigning_user_licenses.htm&amp;type=5</a></span><span class="c7">&nbsp;</span></li></ol><ol class="c18 lst-kix_1dzs4yy7oxe5-0" start="2"><li class="c2 c42 li-bullet-0"><span class="c13 c11">Enable &ldquo;Send Email&rdquo; and Allow Activities</span></li></ol><ol class="c18 lst-kix_1dzs4yy7oxe5-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c4">Setup &gt; Search for &ldquo;Deliverability&rdquo;</span></li><li class="c17 c2 li-bullet-0"><span class="c4">Select &ldquo;Deliverability&rdquo; </span></li><li class="c17 c2 li-bullet-0"><span class="c7">Set Send Email Access to </span><span class="c4">&ldquo;All Email&rdquo;</span></li><li class="c17 c2 li-bullet-0"><span class="c7">Refer to this Help Article for more information: </span><span class="c44 c7"><a class="c30" href="https://www.google.com/url?q=https://help.salesforce.com/s/articleView?id%3Dsf.data_sandbox_email_deliverability.htm%26type%3D5&amp;sa=D&amp;source=editors&amp;ust=1651601162344374&amp;usg=AOvVaw39y3yZ0U4Qtpr9VlwcpxsA">https://help.salesforce.com/s/articleView?id=sf.data_sandbox_email_deliverability.htm&amp;type=5</a></span><span class="c4">&nbsp;</span></li></ol><ol class="c18 lst-kix_1dzs4yy7oxe5-0" start="3"><li class="c42 c2 li-bullet-0"><span class="c13 c11">Set the Organization-Wide Email Address</span></li></ol><ol class="c18 lst-kix_1dzs4yy7oxe5-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c4">Setup &gt; Email &gt; Organization-Wide Addresses</span></li><li class="c17 c2 li-bullet-0"><span class="c7">Add a ne</span><span class="c4">w User Selectable Organization-Wide Email Addresses and choose a Display Name of your choosing.</span></li><li class="c17 c2 li-bullet-0"><span class="c7">Verify the email address s</span><span class="c4">et by opening the link sent to the email address. </span></li></ol><ol class="c18 lst-kix_1dzs4yy7oxe5-0" start="4"><li class="c42 c2 li-bullet-0"><span class="c11">Enable Email-to-Case</span><span class="c4">&nbsp;</span></li></ol><ol class="c18 lst-kix_1dzs4yy7oxe5-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c4">Setup a Default User if one is not already specified in your settings. </span></li><li class="c2 c17 li-bullet-0"><span class="c4">Turn on Email-To-Case.</span></li><li class="c17 c2 li-bullet-0"><span class="c7">Refer to this Help Article for step-by-step instructions: </span><span class="c44 c7"><a class="c30" href="https://www.google.com/url?q=https://help.salesforce.com/s/articleView?id%3Dsf.customizesupport_enabling_email_to_case.htm%26language%3Den_US%26r%3Dhttps%253A%252F%252Fwww.google.com%252F%26type%3D5%23:~:text%3DFrom%2520Setup%252C%2520enter%2520Email%252Dto,%252DCase%252C%2520and%2520click%2520Save&amp;sa=D&amp;source=editors&amp;ust=1651601162346064&amp;usg=AOvVaw0VYnfSWZ6i8PeQBYCTJz4A">https://help.salesforce.com/s/articleView?id=sf.customizesupport_enabling_email_to_case.htm&amp;language=en_US</a></span></li></ol><p class="c1 c48"><span class="c4"></span></p><h2 class="c39" id="h.ot794ite4v8l"><span class="c10 c7">Installation Steps:</span></h2><p class="c48 c52 subtitle" id="h.86ge5l6ezwo8"><span class="c37 c7">These steps must be completed to install the unmanaged package of pre-built components for PRM</span></p><ol class="c18 lst-kix_8te2xvkvyyrd-0 start" start="1"><li class="c42 c2 li-bullet-0"><span class="c4">Use the Salesforce CLI utility to upload the assets in this GitHub repository into your Salesforce org. </span></li><li class="c42 c2 li-bullet-0"><span class="c7">For guidance on how to use the Salesforce CLI, please refer to this documentation: </span><span class="c7 c44"><a class="c30" href="https://www.google.com/url?q=https://developer.salesforce.com/tools/sfdxcli&amp;sa=D&amp;source=editors&amp;ust=1651601162347198&amp;usg=AOvVaw26lP3hn_B7t-VOi0rW9shM">https://developer.salesforce.com/tools/sfdxcli</a></span><span class="c4">&nbsp;</span></li></ol><h2 class="c39" id="h.l287isqezljb"><span class="c7 c10">Post-Installation Steps:</span></h2><p class="c52 c48 subtitle" id="h.7902qphuta90"><span class="c37 c7">These steps must be completed to enable the included components (Estimated Time: 1-2 hours)</span></p><ol class="c18 lst-kix_7kvc9e8ygfx9-0 start" start="1"><li class="c42 c2 li-bullet-0"><span class="c13 c11">Enable Path to support the visual Path flow on the Case Lightning Record Page</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c7">Follow these steps to enable the Path: </span><span class="c44 c7"><a class="c30" href="https://www.google.com/url?q=https://help.salesforce.com/s/articleView?id%3Dsf.path_enable.htm%26type%3D5&amp;sa=D&amp;source=editors&amp;ust=1651601162348489&amp;usg=AOvVaw0vFpuJf4xXMkUpSd865s2u">https://help.salesforce.com/s/articleView?id=sf.path_enable.htm&amp;type=5</a></span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-0" start="2"><li class="c42 c2 li-bullet-0"><span class="c13 c11">Configure Salesforce Maps</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c7">Please follow these steps to set up Salesforce Maps: </span><span class="c44 c7"><a class="c30" href="https://www.google.com/url?q=https://help.salesforce.com/s/articleView?id%3Dsf.salesforce_maps_setup_maps.htm%26type%3D5&amp;sa=D&amp;source=editors&amp;ust=1651601162349280&amp;usg=AOvVaw225roGSg3G-GFTeUbrvNxk">https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_maps.htm&amp;type=5</a></span></li><li class="c17 c2 li-bullet-0"><span class="c7">The package contains predefined custom fields for the Check-In Activity Fields. Please follow the steps in this Help Article: </span><span class="c44 c7"><a class="c30" href="https://www.google.com/url?q=https://help.salesforce.com/s/articleView?id%3Dsf.salesforce_maps_setup_check_in_activity_fields_select.htm%26type%3D5&amp;sa=D&amp;source=editors&amp;ust=1651601162349724&amp;usg=AOvVaw29mo6yXmnHTizHGyQzs7tH">https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&amp;type=5</a></span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-2 start" start="1"><li class="c19 c2 li-bullet-0"><span class="c4">At the bottom of the Activity Settings, click &ldquo;Suggest&rdquo; to auto-assign the custom fields.</span></li><li class="c19 c2 li-bullet-0"><span class="c4">In the Field Set dropdown in Activity Settings, Select the Field Set &ldquo;Salesforce Maps Check Out&rdquo;.</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-0" start="3"><li class="c42 c2 li-bullet-0"><span class="c11">Configure Recommendation Record - </span><span class="c4">This Recommendation will show as a Next Best Action to your liaisons as they review contact records in Salesforce. If the custom field &ldquo;Enrolled in Provider Portal?&rdquo; on the Contact Record is Unchecked, then this recommendation will show. </span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c4">Download the recommendation_1.csv file in the GitHub repository above</span></li><li class="c17 c2 li-bullet-0"><span class="c7">Use DataLoader to import the Recommendation into your Salesforce org. </span></li></ol><p class="c1 c48"><span class="c4"></span></p><ol class="c18 lst-kix_7kvc9e8ygfx9-0" start="4"><li class="c42 c2 li-bullet-0"><span class="c11">Meeting Reminder Workflow Rule and Email Template </span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c4">This will enable the system to automatically send prospects or contacts an email reminder of an upcoming meeting 1 day before the meeting date. This helps decrease the no-show rate of prospects or contacts of liaison meetings.</span></li><li class="c17 c2 li-bullet-0"><span class="c4">Create a new Workflow Rule titled &ldquo;Meeting Reminder&rdquo;</span></li><li class="c17 c2 li-bullet-0"><span class="c4">Configure the Workflow Rule as outlined below:</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-2 start" start="1"><li class="c19 c2 li-bullet-0"><span class="c4">Object = &ldquo;Event&rdquo;</span></li><li class="c19 c2 li-bullet-0"><span class="c4">Rule Name = &ldquo;Meeting Reminder&rdquo; or your chosen name</span></li><li class="c19 c2 li-bullet-0"><span class="c4">Description = give the rule a description</span></li><li class="c19 c2 li-bullet-0"><span class="c4">Evaluate the rule when a record is = &ldquo;created and any time it&rsquo;s edited to subsequently meet criteria&rdquo;</span></li><li class="c2 c19 li-bullet-0"><span class="c4">Under Rule Criteria, set Run this rule if the &ldquo;Formula evaluates to true&rdquo;</span></li><li class="c19 c2 li-bullet-0"><span class="c4">Formula = ActivityDate &gt; TODAY()</span></li><li class="c19 c2 li-bullet-0"><span class="c4">Click Save</span></li></ol><p class="c1 c48"><span class="c4"></span></p><p class="c2 c48"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 666.69px; height: 303.43px;"><img alt="" src="images/image4.png" style="width: 666.69px; height: 303.43px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c21"><span class="c4"></span></p><hr style="page-break-before:always;display:none;"><p class="c21"><span class="c4"></span></p><p class="c21"><span class="c4"></span></p><ol class="c18 lst-kix_7kvc9e8ygfx9-1" start="4"><li class="c17 c2 li-bullet-0"><span class="c4">On the Time-Dependent Workflow Actions section of the Workflow Rule, configure the following:</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-2 start" start="1"><li class="c19 c2 li-bullet-0"><span class="c4">Click Add Time Trigger</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-3 start" start="1"><li class="c2 c26 li-bullet-0"><span class="c4">Set the Time Trigger to be &ldquo;1 Day Before Event: Date&rdquo;</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-2" start="2"><li class="c19 c2 li-bullet-0"><span class="c4">Add a Workflow Action of the following type: Email Alert</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-3 start" start="1"><li class="c2 c26 li-bullet-0"><span class="c4">Type = Email Alert</span></li><li class="c2 c26 li-bullet-0"><span class="c4">Description = Meeting Reminder</span></li><li class="c2 c26 li-bullet-0"><span class="c4">Object = Event</span></li><li class="c2 c26 li-bullet-0"><span class="c7">Email Template = the Email template record of your choosing. For additional information on how to create an email template, refer to this Help Article: </span><span class="c44 c7"><a class="c30" href="https://www.google.com/url?q=https://help.salesforce.com/s/articleView?id%3Dsf.email_create_a_template.htm%26type%3D5&amp;sa=D&amp;source=editors&amp;ust=1651601162354297&amp;usg=AOvVaw1sziYk-VEzqqv88IXZPXww">https://help.salesforce.com/s/articleView?id=sf.email_create_a_template.htm&amp;type=5</a></span><span class="c4">&nbsp;</span></li><li class="c2 c26 li-bullet-0"><span class="c4">Recipient Type = User</span></li><li class="c2 c26 li-bullet-0"><span class="c4">Selected Recipients = Email Field: Email</span></li><li class="c2 c26 li-bullet-0"><span class="c4">From Email Address = Select the appropriate from email address according to your organization&rsquo;s preferences.</span></li></ol><p class="c1 c48"><span class="c4"></span></p><p class="c48 c60"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 552.01px; height: 256.50px;"><img alt="" src="images/image2.png" style="width: 552.01px; height: 256.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c1 c48"><span class="c4"></span></p><p class="c1 c48"><span class="c4"></span></p><hr style="page-break-before:always;display:none;"><p class="c1 c48"><span class="c4"></span></p><ol class="c18 lst-kix_7kvc9e8ygfx9-0" start="5"><li class="c42 c2 li-bullet-0"><span class="c13 c11">Add &ldquo;Confirm Meeting&rdquo; Quick Action to your users&rsquo; Publisher Layout</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c4">The package contains a Quick Action labeled &ldquo;Confirm Meeting&rdquo; which enables your Physician Liaison user to send a templates email to a contact/lead to confirm an upcoming meeting in one click. </span></li><li class="c17 c2 li-bullet-0"><span class="c4">To enable this Quick Action, add the Quick Action to the active Publisher Layout assigned to the Physician Liaison Profile, or your Global Publisher Layout. </span></li><li class="c17 c2 li-bullet-0"><span class="c7">Refer to this Help Article for more information on how to edit a Publisher Layout: </span><span class="c44 c7"><a class="c30" href="https://www.google.com/url?q=https://help.salesforce.com/s/articleView?id%3Dsf.working_with_global_publisher_layouts.htm%26type%3D5&amp;sa=D&amp;source=editors&amp;ust=1651601162356183&amp;usg=AOvVaw3y_ZDDUv5H0xRQqvqX5Jhk">https://help.salesforce.com/s/articleView?id=sf.working_with_global_publisher_layouts.htm&amp;type=5</a></span><span class="c7">&nbsp;</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-0" start="6"><li class="c42 c2 li-bullet-0"><span class="c13 c11">Create a Physician Liaison Profile</span></li></ol><ol class="c18 lst-kix_7kvc9e8ygfx9-1 start" start="1"><li class="c17 c2 li-bullet-0"><span class="c4">Navigate to Setup &gt; Profiles &gt; New Profile</span></li><li class="c17 c2 li-bullet-0"><span class="c4">Ensure the Profile is aligned to the Salesforce License Type</span></li><li class="c17 c2 li-bullet-0"><span class="c4">Name the Profile &ldquo;Physician Liaison&rdquo;</span></li><li class="c17 c2 li-bullet-0"><span class="c4">Ensure to align the Profile to these components:</span></li></ol><p class="c1 c48"><span class="c4"></span></p><a id="t.6c9b1278bb500cb9d3e1fb7e5fe33a8d271c7aa7"></a><a id="t.0"></a><table class="c54"><tbody><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c13 c11">Component Type</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c13 c11">Component Name</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Lightning App</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Physician Relationship Management</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Default Home Page - PRM App</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Physician_Liaison_Home_Page</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Case Record Type</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Account Request</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Case Page Layout</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Account Request</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Case Path</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Account Request Path</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Case Lightning Page</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Case_Record_Page1</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Task Record Type</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Simple Task</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Contact Page Layout</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Physician Layout</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Contact Lightning Page</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Contact Record Page PRM</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Contact Compact Layout</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Physician Liaison Layout</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Lead Record Type</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Provider</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Lead Page Layout</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Provider</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Lead Lightning Page</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Lead_Record_Page_PRM</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Lead Compact Layout</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Physician Liaison Layout</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Account Page Layout</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Account Layout - PRM</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Account Lightning Page</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Account Record Page PRM</span></p></td></tr><tr class="c15"><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Account Compact Layout</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c23"><span class="c4">Physician Liaison Layout</span></p></td></tr></tbody></table><p class="c1 c48"><span class="c4"></span></p><hr style="page-break-before:always;display:none;"><h2 class="c39 c55" id="h.cp04meiiosu7"><span class="c10 c7"></span></h2><h2 class="c39" id="h.r3pgl6s16dtk"><span class="c10 c7">Unmanaged Package Component Inventory</span></h2><p class="c1 c48"><span class="c4"></span></p><a id="t.aa5ea1153374fe509d206d261fb5216d9b6774aa"></a><a id="t.1"></a><table class="c54"><tbody><tr class="c24"><td class="c34" colspan="1" rowspan="1"><p class="c2"><span class="c9 c7">Resources:</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c41" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c34" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c29" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Action</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Name</span></p></td><td class="c46" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Parent Object</span></p></td><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Type</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Installation Notes</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">NewEventPRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account Layout - PRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Page Layout</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">NewCasePRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">SendEmailPRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">My Accounts Without Recent Activity</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Report</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task.Defer_Change_Date</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Screen_Shot_20220215_at_45040_PM1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Asset File</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account Request</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Case</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Page Layout</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">NewNotePRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Physician Liaison Performance Dashboard</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Dashboard</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account_Request_Path</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Path Assistant</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Provider</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lead</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Business Process</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">My Check Ins</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Report</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Simple Task</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Page Layout</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">SampleHealthcarePractitionerFacilityContactConfigurationPRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">UI Object Relation Configuration</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Provider</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lead</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Record Type</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Provider</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lead</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Page Layout</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Confirm Meeting</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account Request</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Case</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Business Process</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">My Completed Activities</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Report</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Liaison Reports</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Report Folder</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Physician Liaison Layout</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Compact Layout</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Case.SendEmailCase</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Case</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Enroll in Provider Portal</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Physician Liaison Layout</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Contact</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Compact Layout</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">LogACallPRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Simple Task</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Record Type</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">My Avg Check-In Distance from Account (f</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Report</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">NewTaskPRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Physician Layout PRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Contact</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Page Layout</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Salesforce Maps Check Out</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Field Set</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Referral Trend Report</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Report</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">NewOpportunityPRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task.UpdatePriority_PRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">General</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Record Type</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">My New Leads</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lead</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">List View</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">NewContactPRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account Request</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Case</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Record Type</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">My Meeting Quality</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Report</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">My Time Spent On Site</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Report</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">SampleHealthcarePractitionerFacilityAccountConfigurationPRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">UI Object Relation Configuration</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Physician Liaison Layout</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lead</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Compact Layout</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Liaison Dashboards</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Dashboard Folder</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">New_Task_PRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Global</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c32" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c45" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task.UpdateStatusPRM</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c2"><span class="c0">Task</span></p></td><td class="c32" colspan="1" rowspan="1"><p class="c2"><span class="c0">Action</span></p></td><td class="c53" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c24"><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c43" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c22" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c34" colspan="1" rowspan="1"><p class="c2"><span class="c9 c7">Apps:</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c41" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c34" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c29" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Action</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Name</span></p></td><td class="c46" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Parent Object</span></p></td><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Type</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Installation Notes</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Physician Relationship Management</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">App</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c24"><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c43" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c22" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c34" colspan="1" rowspan="1"><p class="c2"><span class="c9 c7">Flows:</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c41" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c34" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c29" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Action</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Name</span></p></td><td class="c46" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Parent Object</span></p></td><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Type</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Installation Notes</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Reminder to Enroll in Provider Portal</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Flow Version</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c24"><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c43" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c22" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c34" colspan="1" rowspan="1"><p class="c2"><span class="c9 c7">Fields:</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c41" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c34" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c29" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Action</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Name</span></p></td><td class="c46" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Parent Object</span></p></td><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Type</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Installation Notes</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Check Out Distance From Record (mi)</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Activity</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Custom Field</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Check Out Date/Time</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Activity</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Custom Field</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Meeting Quality</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Activity</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Custom Field</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Check In Date/Time</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Activity</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Custom Field</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Enrolled in Provider Portal?</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Contact</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Custom Field</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Time on Site Minutes</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Activity</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Custom Field</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Days Since Last Visit</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Custom Field</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c32" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c45" colspan="1" rowspan="1"><p class="c2"><span class="c0">Check Out Date</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c2"><span class="c0">Activity</span></p></td><td class="c32" colspan="1" rowspan="1"><p class="c2"><span class="c0">Custom Field</span></p></td><td class="c53" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c24"><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c43" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c22" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c34" colspan="1" rowspan="1"><p class="c2"><span class="c9 c7">Recommendation Strategies:</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c41" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c34" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c29" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Action</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Name</span></p></td><td class="c46" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Parent Object</span></p></td><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Type</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Installation Notes</span></p></td></tr><tr class="c5"><td class="c32" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c45" colspan="1" rowspan="1"><p class="c2"><span class="c0">Referring Providers</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c32" colspan="1" rowspan="1"><p class="c2"><span class="c0">Recommendation Strategy</span></p></td><td class="c53" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c24"><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c43" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c22" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c34" colspan="1" rowspan="1"><p class="c2"><span class="c9 c7">Pages:</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c41" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c34" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c29" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td></tr><tr class="c24"><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Action</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Name</span></p></td><td class="c46" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Parent Object</span></p></td><td class="c33" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Component Type</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c2"><span class="c11 c28">Installation Notes</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Physician_Relationship_Management_UtilityBar</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lightning Page</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lead_Record_Page_PRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lightning Page</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Physician_Liaison_Home_Page</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lightning Page</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Case_Record_Page1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lightning Page</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c16" colspan="1" rowspan="1"><p class="c2"><span class="c0">Contact_Record_Page_PRM</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lightning Page</span></p></td><td class="c6" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr><tr class="c5"><td class="c32" colspan="1" rowspan="1"><p class="c2"><span class="c0">Create</span></p></td><td class="c45" colspan="1" rowspan="1"><p class="c2"><span class="c0">Account_Record_Page_PRM</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c1"><span class="c9 c7"></span></p></td><td class="c32" colspan="1" rowspan="1"><p class="c2"><span class="c0">Lightning Page</span></p></td><td class="c53" colspan="1" rowspan="1"><p class="c2"><span class="c0">This is a brand new component.</span></p></td></tr></tbody></table><p class="c1 c48"><span class="c4"></span></p></body></html>
+# README.md
+
+
+Updated Install Instructions
+3/16/2023
+
+
+
+# Accelerator for PRM - Unmanaged Package Installation Instructions
+
+
+Last Updated: March 2023
+
+
+## Pre-Installation Steps:
+
+## These steps must be completed before installing the unmanaged package (Estimated time: 10 minutes)
+
+1. **Ensure the following licenses are installed in your Salesforce org:**
+    1. Health Cloud Sales - Enterprise Edition
+    2. Salesforce Maps
+    3. To confirm which licenses are installed in your org, please refer to this Help Article: [_https://help.salesforce.com/s/articleView?id=sf.distribution_assigning_user_licenses.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.distribution_assigning_user_licenses.htm&type=5) 
+2. **Enable “Send Email” and Allow Activities**
+    1. Setup > Search for “Deliverability”
+    2. Select “Deliverability” 
+    3. Set Send Email Access to “All Email”
+    4. Refer to this Help Article for more information: [_https://help.salesforce.com/s/articleView?id=sf.data_sandbox_email_deliverability.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.data_sandbox_email_deliverability.htm&type=5) 
+3. **Set the Organization-Wide Email Address**
+    1. Setup > Email > Organization-Wide Addresses
+    2. Add a new User Selectable Organization-Wide Email Addresses and choose a Display Name of your choosing.
+    3. Verify the email address set by opening the link sent to the email address. 
+4. **Enable Email-to-Case** 
+    1. Setup a Default User if one is not already specified in your settings. 
+    2. Turn on Email-To-Case.
+    3. Refer to this Help Article for step-by-step instructions: [_https://help.salesforce.com/s/articleView?id=sf.customizesupport_enabling_email_to_case.htm&language=en_US_](https://help.salesforce.com/s/articleView?id=sf.customizesupport_enabling_email_to_case.htm&language=en_US&r=https%3A%2F%2Fwww.google.com%2F&type=5#:~:text=From%20Setup%2C%20enter%20Email%2Dto,%2DCase%2C%20and%20click%20Save)
+
+
+
+## Installation Steps:
+
+## These steps must be completed to install the unmanaged package of pre-built components for PRM
+
+1. Navigate to the following website and complete the Download Now workflow: [_https://hlsaccelerators.developer.salesforce.com/s/bundle/a9E5f000000PKvwEAG/solution-accelerator-for-provider-relationship-management_](https://hlsaccelerators.developer.salesforce.com/s/bundle/a9E5f000000PKvwEAG/solution-accelerator-for-provider-relationship-management) 
+    1. You will be prompted to acknowledge the Terms of Service, after which please enter your email address to receive a one-time confirmation code.
+    2. Enter the confirmation code in the next step. After entering the code, you will have a chance to open these same instructions in your browser. 
+    3. On the final step, you will be presented with “Install In My Org” which will bring you to the Salesforce login screen. Enter your credentials for the org in which you wish to install the accelerator. 
+    4. Choose “Install for all users” when prompted. The installation process may take a few minutes. You will receive an email with installation confirmation when completed.
+    5. If you have any issues with installation, please contact the HLS Accelerator team at [_lchristenbury@salesforce.com_](mailto:lchristenbury@salesforce.com). 
+
+## Post-Installation Steps:
+
+## These steps must be completed to enable the included components (Estimated Time: 1-2 hours)
+
+**Enable Path to support the visual Path flow on the Case Lightning Record Page**
+
+
+1. Follow these steps to enable the Path: [_https://help.salesforce.com/s/articleView?id=sf.path_enable.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.path_enable.htm&type=5)
+
+
+**Configure Salesforce Maps**
+
+
+1. Please follow these steps to set up Salesforce Maps: [_https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_maps.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_maps.htm&type=5)
+2. The package contains predefined custom fields for the Check-In Activity Fields. Please follow the steps in this Help Article: [_https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.salesforce_maps_setup_check_in_activity_fields_select.htm&type=5)
+3. At the bottom of the Activity Settings, click “Suggest” to auto-assign the custom fields.
+4. In the Field Set dropdown in Activity Settings, Select the Field Set “Salesforce Maps Check Out”.
+
+[Image: Screenshot 2023-03-15 at 10.59.48 AM.png]**Configure Recommendation Record -** This Recommendation will show as a Next Best Action to your liaisons as they review contact records in Salesforce. If the custom field “Enrolled in Provider Portal?” on the Contact Record is Unchecked, then this recommendation will show.
+
+
+1. Download the recommendation_1.csv file in the GitHub repository above
+2. Use DataLoader to import the Recommendation into your Salesforce org. 
+
+
+**Meeting Reminder Flow and Email Template** 
+
+1. This will enable the system to automatically send prospects or contacts an email reminder of an upcoming meeting 1 day before the meeting date. This helps decrease the no-show rate of prospects or contacts of liaison meetings.
+2. Create a new Auto-Launched Flow titled “Meeting Reminder”
+3. Configure the Flow Start as outlined below:
+    1. Object: Event
+    2. Trigger the Flow When: A record is created or updated
+    3. Entry Conditions:
+    4. Condition Requirements: Formula Evaluates to True
+    5. Formula: {!$Record.ActivityDate} > TODAY()
+    6. When to Run the Flow for Updated Records: Only when a record is updated to meet the condition requirements. 
+
+[Image: Screenshot 2023-03-15 at 11.48.54 AM.png]
+
+1. On the Flow path, Click to add a Schedule Trigger:
+    1. Set the Schedule Path to be “1 Day Before Event: Date”
+    2. Time Source: Event: Due Date Only
+    3. Offset Number: 1
+    4. Offset Options: Day Before
+
+[Image: Screenshot 2023-03-16 at 10.10.29 AM.png]
+
+1. Add a Flow Action of the following type: Email Alert
+    1. Type = Email Alert
+    2. Description = Meeting Reminder
+    3. Email Template = the Email template record of your choosing. For additional information on how to create an email template, refer to this Help Article: [_https://help.salesforce.com/s/articleView?id=sf.email_create_a_template.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.email_create_a_template.htm&type=5) 
+    4. Selected Recipients = Attendees
+    5. From Email Address = Select the appropriate from email address according to your organization’s preferences.
+2. Save and Debug your Flow to validate that it meets your business requirements
+3. Once you are satisfied with the Flow, Activate the Flow. 
+
+
+**Add “Confirm Meeting” Quick Action to your users’ Publisher Layout**
+
+1. The package contains a Quick Action labeled “Confirm Meeting” which enables your Physician Liaison user to send a templated email to a contact/lead to confirm an upcoming meeting in one click. 
+2. To enable this Quick Action, add the Quick Action to the active Publisher Layout assigned to the Physician Liaison Profile, or your Global Publisher Layout. 
+3. Refer to this Help Article for more information on how to edit a Publisher Layout: [_https://help.salesforce.com/s/articleView?id=sf.working_with_global_publisher_layouts.htm&type=5_](https://help.salesforce.com/s/articleView?id=sf.working_with_global_publisher_layouts.htm&type=5) 
+
+**Create a Physician Liaison Profile**
+
+1. Navigate to Setup > Profiles > New Profile
+2. Ensure the Profile is aligned to the Salesforce License Type
+3. Name the Profile “Physician Liaison”
+4. Ensure to align the Profile to these components:
+
+
+
+
+|
+**Component Type**	|
+**Component Name**	|
+|---	|---	|
+|
+Lightning App	|
+Physician Relationship Management	|
+|
+Default Home Page - PRM App	|
+Physician_Liaison_Home_Page	|
+|
+Case Record Type	|
+Account Request	|
+|
+Case Page Layout	|
+Account Request	|
+|
+Case Path	|
+Account Request Path	|
+|
+Case Lightning Page	|
+Case_Record_Page1	|
+|
+Task Record Type	|
+Simple Task	|
+|
+Contact Page Layout	|
+Physician Layout	|
+|
+Contact Lightning Page	|
+Contact Record Page PRM	|
+|
+Contact Compact Layout	|
+Physician Liaison Layout	|
+|
+Lead Record Type	|
+Provider	|
+|
+Lead Page Layout	|
+Provider	|
+|
+Lead Lightning Page	|
+Lead_Record_Page_PRM	|
+|
+Lead Compact Layout	|
+Physician Liaison Layout	|
+|
+Account Page Layout	|
+Account Layout - PRM	|
+|
+Account Lightning Page	|
+Account Record Page PRM	|
+|
+Account Compact Layout	|
+Physician Liaison Layout	|
+
+
+
+## Unmanaged Package Component Inventory
+
+
+
+
+|
+Resources:	|
+	|
+	|
+	|
+	|
+|---	|---	|---	|---	|---	|
+|
+**Action**	|
+**Component Name**	|
+**Parent Object**	|
+**Component Type**	|
+**Installation Notes**	|
+|
+Create	|
+NewEventPRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Account Layout - PRM	|
+Account	|
+Page Layout	|
+This is a brand new component.	|
+|
+Create	|
+NewCasePRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+SendEmailPRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+My Accounts Without Recent Activity	|
+	|
+Report	|
+This is a brand new component.	|
+|
+Create	|
+Task.Defer_Change_Date	|
+Task	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Screen_Shot_20220215_at_45040_PM1	|
+	|
+Asset File	|
+This is a brand new component.	|
+|
+Create	|
+Account Request	|
+Case	|
+Page Layout	|
+This is a brand new component.	|
+|
+Create	|
+NewNotePRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Physician Liaison Performance Dashboard	|
+	|
+Dashboard	|
+This is a brand new component.	|
+|
+Create	|
+Account_Request_Path	|
+	|
+Path Assistant	|
+This is a brand new component.	|
+|
+Create	|
+Provider	|
+Lead	|
+Business Process	|
+This is a brand new component.	|
+|
+Create	|
+My Check Ins	|
+	|
+Report	|
+This is a brand new component.	|
+|
+Create	|
+Simple Task	|
+Task	|
+Page Layout	|
+This is a brand new component.	|
+|
+Create	|
+SampleHealthcarePractitionerFacilityContactConfigurationPRM	|
+	|
+UI Object Relation Configuration	|
+This is a brand new component.	|
+|
+Create	|
+Provider	|
+Lead	|
+Record Type	|
+This is a brand new component.	|
+|
+Create	|
+Provider	|
+Lead	|
+Page Layout	|
+This is a brand new component.	|
+|
+Create	|
+Confirm Meeting	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Account Request	|
+Case	|
+Business Process	|
+This is a brand new component.	|
+|
+Create	|
+My Completed Activities	|
+	|
+Report	|
+This is a brand new component.	|
+|
+Create	|
+Liaison Reports	|
+	|
+Report Folder	|
+This is a brand new component.	|
+|
+Create	|
+Physician Liaison Layout	|
+Account	|
+Compact Layout	|
+This is a brand new component.	|
+|
+Create	|
+Case.SendEmailCase	|
+Case	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Enroll in Provider Portal	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Physician Liaison Layout	|
+Contact	|
+Compact Layout	|
+This is a brand new component.	|
+|
+Create	|
+LogACallPRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Simple Task	|
+Task	|
+Record Type	|
+This is a brand new component.	|
+|
+Create	|
+My Avg Check-In Distance from Account (f	|
+	|
+Report	|
+This is a brand new component.	|
+|
+Create	|
+NewTaskPRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Physician Layout PRM	|
+Contact	|
+Page Layout	|
+This is a brand new component.	|
+|
+Create	|
+Salesforce Maps Check Out	|
+Task	|
+Field Set	|
+This is a brand new component.	|
+|
+Create	|
+Referral Trend Report	|
+	|
+Report	|
+This is a brand new component.	|
+|
+Create	|
+NewOpportunityPRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Task.UpdatePriority_PRM	|
+Task	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+General	|
+Task	|
+Record Type	|
+This is a brand new component.	|
+|
+Create	|
+My New Leads	|
+Lead	|
+List View	|
+This is a brand new component.	|
+|
+Create	|
+NewContactPRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Account Request	|
+Case	|
+Record Type	|
+This is a brand new component.	|
+|
+Create	|
+My Meeting Quality	|
+	|
+Report	|
+This is a brand new component.	|
+|
+Create	|
+My Time Spent On Site	|
+	|
+Report	|
+This is a brand new component.	|
+|
+Create	|
+SampleHealthcarePractitionerFacilityAccountConfigurationPRM	|
+	|
+UI Object Relation Configuration	|
+This is a brand new component.	|
+|
+Create	|
+Physician Liaison Layout	|
+Lead	|
+Compact Layout	|
+This is a brand new component.	|
+|
+Create	|
+Liaison Dashboards	|
+	|
+Dashboard Folder	|
+This is a brand new component.	|
+|
+Create	|
+New_Task_PRM	|
+Global	|
+Action	|
+This is a brand new component.	|
+|
+Create	|
+Task.UpdateStatusPRM	|
+Task	|
+Action	|
+This is a brand new component.	|
+|
+	|
+	|
+	|
+	|
+	|
+|
+Apps:	|
+	|
+	|
+	|
+	|
+|
+**Action**	|
+**Component Name**	|
+**Parent Object**	|
+**Component Type**	|
+**Installation Notes**	|
+|
+Create	|
+Physician Relationship Management	|
+	|
+App	|
+This is a brand new component.	|
+|
+	|
+	|
+	|
+	|
+	|
+|
+Flows:	|
+	|
+	|
+	|
+	|
+|
+**Action**	|
+**Component Name**	|
+**Parent Object**	|
+**Component Type**	|
+**Installation Notes**	|
+|
+Create	|
+Reminder to Enroll in Provider Portal	|
+	|
+Flow Version	|
+This is a brand new component.	|
+|
+	|
+	|
+	|
+	|
+	|
+|
+Fields:	|
+	|
+	|
+	|
+	|
+|
+**Action**	|
+**Component Name**	|
+**Parent Object**	|
+**Component Type**	|
+**Installation Notes**	|
+|
+Create	|
+Check Out Distance From Record (mi)	|
+Activity	|
+Custom Field	|
+This is a brand new component.	|
+|
+Create	|
+Check Out Date/Time	|
+Activity	|
+Custom Field	|
+This is a brand new component.	|
+|
+Create	|
+Meeting Quality	|
+Activity	|
+Custom Field	|
+This is a brand new component.	|
+|
+Create	|
+Check In Date/Time	|
+Activity	|
+Custom Field	|
+This is a brand new component.	|
+|
+Create	|
+Enrolled in Provider Portal?	|
+Contact	|
+Custom Field	|
+This is a brand new component.	|
+|
+Create	|
+Time on Site Minutes	|
+Activity	|
+Custom Field	|
+This is a brand new component.	|
+|
+Create	|
+Days Since Last Visit	|
+Account	|
+Custom Field	|
+This is a brand new component.	|
+|
+Create	|
+Check Out Date	|
+Activity	|
+Custom Field	|
+This is a brand new component.	|
+|
+	|
+	|
+	|
+	|
+	|
+|
+Recommendation Strategies:	|
+	|
+	|
+	|
+	|
+|
+**Action**	|
+**Component Name**	|
+**Parent Object**	|
+**Component Type**	|
+**Installation Notes**	|
+|
+Create	|
+Referring Providers	|
+	|
+Recommendation Strategy	|
+This is a brand new component.	|
+|
+	|
+	|
+	|
+	|
+	|
+|
+Pages:	|
+	|
+	|
+	|
+	|
+|
+**Action**	|
+**Component Name**	|
+**Parent Object**	|
+**Component Type**	|
+**Installation Notes**	|
+|
+Create	|
+Physician_Relationship_Management_UtilityBar	|
+	|
+Lightning Page	|
+This is a brand new component.	|
+|
+Create	|
+Lead_Record_Page_PRM	|
+	|
+Lightning Page	|
+This is a brand new component.	|
+|
+Create	|
+Physician_Liaison_Home_Page	|
+	|
+Lightning Page	|
+This is a brand new component.	|
+|
+Create	|
+Case_Record_Page1	|
+	|
+Lightning Page	|
+This is a brand new component.	|
+|
+Create	|
+Contact_Record_Page_PRM	|
+	|
+Lightning Page	|
+This is a brand new component.	|
+|
+Create	|
+Account_Record_Page_PRM	|
+	|
+Lightning Page	|
+This is a brand new component.	|
+
