@@ -62,7 +62,7 @@ Last Updated: March 16, 2023
 **Configure Recommendation Record -** This Recommendation will show as a Next Best Action to your liaisons as they review contact records in Salesforce. If the custom field “Enrolled in Provider Portal?” on the Contact Record is Unchecked, then this recommendation will show.
 
 
-1. Download the recommendation_1.csv file in the GitHub repository above
+1. Download the recommendation_1.csv file in the GitHub repository here: https://github.com/salesforce/Accelerator-for-Provider-Relationship-Management
 2. Use DataLoader to import the Recommendation into your Salesforce org. 
 
 
