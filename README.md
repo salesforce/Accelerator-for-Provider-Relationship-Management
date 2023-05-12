@@ -1,4 +1,4 @@
-# Accelerator for PRM - Unmanaged Package Installation Instructions
+# Accelerator for Physician Relationship Management - Accelerator Installation Instructions
 
 
 Last Updated: March 16, 2023
