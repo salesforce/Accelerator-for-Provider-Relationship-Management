@@ -1,5 +1,7 @@
 # Accelerator for Physician Relationship Management - Accelerator Installation Instructions
 
+The Accelerator for Physician Relationship Management delivers a pre-configured app to enable your liaisons to maintain and expand their network of referring physicians. The pre-built app is available for download into your Salesforce org free of charge using the controls to the right.
+
 
 Last Updated: March 16, 2023
 
