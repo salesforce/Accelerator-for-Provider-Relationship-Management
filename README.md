@@ -69,7 +69,7 @@ Last Updated: March 16, 2023
 **Meeting Reminder Flow and Email Template** 
 
 1. This will enable the system to automatically send prospects or contacts an email reminder of an upcoming meeting 1 day before the meeting date. This helps decrease the no-show rate of prospects or contacts of liaison meetings.
-2. Create a new Auto-Launched Flow titled “Meeting Reminder”
+2. Create a new Record-Triggered Flow titled “Meeting Reminder”
 3. Configure the Flow Start as outlined below:
     1. Object: Event
     2. Trigger the Flow When: A record is created or updated
